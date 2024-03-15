@@ -3,32 +3,35 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lista de Pendientes NFL</title>
+  <title>Pendientes NFL</title>
+  <style>
+    .content {
+      display: none;
+    }
+  </style>
 </head>
 <body>
-  <h1>Listas de Pendientes NFL</h1>
+  <h1>Listas de Pendientes</h1>
 
-  <h2>Lista de todos los pendientes (solo IDs)</h2>
-  <ul id="listaIDs"></ul>
+  <label for="seleccionLista">Seleccionar Lista:</label>
+  <select id="seleccionLista">
+    <option value="listaIDs">Lista de todos los pendientes solo IDs</option>
+    <option value="listaIDsyTitulos">Lista de todos los pendientes IDs y Titles</option>
+    <option value="listaSinResolver">Lista de todos los pendientes sin resolver ID y Title</option>
+    <option value="listaResueltos">Lista de todos los pendientes resueltos ID y Title</option>
+    <option value="listaIDsyUserID">Lista de todos los pendientes IDs y userID</option>
+    <option value="listaResueltosUserID">Lista de todos los pendientes resueltos ID y userID</option>
+    <option value="listaSinResolverUserID">Lista de todos los pendientes sin resolver ID y userID</option>
+  </select>
 
-  <h2>Lista de todos los pendientes (IDs y Titles)</h2>
-  <ul id="listaIDsyTitulos"></ul>
-
-  <h2>Lista de todos los pendientes sin re8solver (ID y Title)</h2>
-  <ul id="listaSinResolver"></ul>
-
-  <h2>Lista de todos los pendientes resueltos (ID y Title)</h2>
-  <ul id="listaResueltos"></ul>
-
-  <h2>Lista de todos los pendientes (IDs y userID)</h2>
-  <ul id="listaIDsyUserID"></ul>
-
-  <h2>Lista de todos los pendientes resueltos (ID y userID)</h2>
-  <ul id="listaResueltosUserID"></ul>
-
-  <h2>Lista de todos los pendientes sin resolver (ID y userID)</h2>
-  <ul id="listaSinResolverUserID"></ul>
-
+  <div id="listaIDs" class="content">Lista de todos los pendientes solo IDs</div>
+  <div id="listaIDsyTitulos" class="content">Lista de todos los pendientes IDs y Titles</div>
+  <div id="listaSinResolver" class="content">Lista de todos los pendientes sin resolver ID y Title</div>
+  <div id="listaResueltos" class="content">Lista de todos los pendientes resueltos ID y Title</div>
+  <div id="listaIDsyUserID" class="content">Lista de todos los pendientes IDs y userID</div>
+  <div id="listaResueltosUserID" class="content">Lista de todos los pendientes resueltos ID y userID</div>
+  <div id="listaSinResolverUserID" class="content">Lista de todos los pendientes sin resolver ID y userID</div>
+  <img id="imagenPredeterminada" src="https://static.nationalgeographicla.com/files/styles/image_3200/public/nationalgeographic_1468962.jpg?w=1600&h=900" alt="Imagen predeterminada">
   <script src="app.js"></script>
 </body>
 </html>
